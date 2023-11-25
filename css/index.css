@@ -1,3 +1,10 @@
+.header-nav {
+    display: flex;
+    justify-content: center; /* Выравнивание по горизонтали по центру */
+    align-items: center; /* Выравнивание по вертикали по центру */
+    height: 100%; /* Высота элемента для центрирования по вертикали */
+}
+
 .header-nav ul {
     list-style: none;
     padding: 0;
@@ -6,6 +13,36 @@
 
 .header-nav ul li {
     margin-right: 20px;
+    position: relative;
+}
+
+.header-nav ul li.active {
+    background-color: #009688;
+    color: #fff;
+}
+
+.header-nav ul li:hover {
+    background-color: #eee;
+}
+
+.header-nav ul li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.header-nav ul li:hover ul {
+    display: block;
+}
+
+.header-nav ul li ul li {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
 }
 
 .main-header {
@@ -17,12 +54,31 @@
     z-index: 1000;
 }
 
+.header-nav ul li.active {
+    background-color: #009688;
+    color: #fff;
+}
+
 @media screen and (max-width: 600px) {
     .header-nav ul {
         display: none;
     }
 }
 
+.section-with-background-center {
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-title,
+.section-text {
+    margin-bottom: 10px;
+}
 
 .section-with-background {
     margin-bottom: 40px;
