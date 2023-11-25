@@ -54,7 +54,7 @@
     z-index: 1000;
 }
 
-.header-nav ul li.active {
+.header-nav ul li a.active {
     background-color: #009688;
     color: #fff;
 }

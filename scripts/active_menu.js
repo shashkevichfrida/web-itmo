@@ -1,11 +1,10 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", ()=> {
     var currentPage = window.location.href;
 
-    var menuItems = document.querySelectorAll('.header-nav ul li');
+    var menuItems = document.querySelectorAll('.header-nav ul li a');
 
     menuItems.forEach(function (item) {
-        var link = item.querySelector('a');
-        if (link && link.href === currentPage) {
+        if (item && item.href === currentPage) {
             item.classList.add('active');
         }
     });
