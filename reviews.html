@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="Минск"/>
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>Comments</title>
+    <link rel="stylesheet" href="css/reviews.css">
     <script src="scripts/active_menu.js"></script>
 </head>
 <body>
@@ -21,14 +21,15 @@
     </nav>
 </header>
 <main>
-
-    <section class="section-with-background-center">
-        <h1 class="section-title">Минск</h1>
-        <p class="section-text">Путеводитель по Минску</p>
-        <img src="image/main.jpeg" class="attraction-image"/>
+    <section  class="section-with-background">
+        <h1 class="section-title">Отзывы</h1>
     </section>
-
-
+    <section class="section-with-background-comments">
+        <div class="preloader" id="preloader"></div>
+        <div id="comments-container"></div>
+        <div class="error-message" id="error-message"></div>
+        <script src="scripts/reviews.js"></script>
+    </section>
 </main>
 <footer id="contacts" class="footer-section">
 
