@@ -211,3 +211,19 @@ main {
 .custom-table tbody tr:nth-child(odd) {
     background-color: #fff;
 }
+
+.carousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel {
+    width: 80%;
+    margin: auto;
+}
+
+.carousel:after {
+    content: "";
+    display: table;
+    clear: both;
+}
